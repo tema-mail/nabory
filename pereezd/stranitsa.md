@@ -5,13 +5,14 @@
 <!-- KNOPKA -->
 <div class="ust">
 <p class="ust-h">Установить одной кнопкой</p>
-<button class="ust-b" type="button" data-copy="Установи набор «Переезд из толстого чата»: выполни в терминале команду
+<button class="ust-b main" type="button" data-copy="Установи набор «Переезд из толстого чата»: выполни в терминале команду
 curl -fsSL https://tema-mail.github.io/nabory/pereezd/ustanovit.sh | bash
 и коротко скажи, что установилось. Сеть нужна.">Скопировать для Claude Code или Codex</button>
 <p class="ust-p">Нажмите, вставьте в чат Claude Code или Codex и отправьте – он сам всё установит. Потом откройте новый чат.</p>
 <button class="ust-b ust-b2" type="button" data-copy="curl -fsSL https://tema-mail.github.io/nabory/pereezd/ustanovit.sh | bash">Скопировать команду для Терминала</button>
 <p class="ust-p"><a href="nabor.tar.gz">Скачать архив</a> · <a href="ustanovit.sh">Что делает установщик</a></p>
 </div>
+<!-- главная кнопка – класс main: тёмная тема artefakt.py красит все кнопки с !important, кроме button.main -->
 <style>.ust{border:1px solid var(--ln);background:var(--card);border-radius:14px;padding:18px 20px;margin:20px 0}.ust-h{font-weight:600;margin:0 0 12px}.ust-b{display:block;width:100%;padding:14px 16px;border:0;border-radius:10px;background:#3b6fe0;color:#fff;font-family:inherit;font-size:16px;font-weight:600;line-height:1.2;cursor:pointer}.ust-b:hover{background:#2f5fcc}.ust-b2{background:transparent;color:var(--tx);border:1px solid var(--ln);margin-top:14px}.ust-p{color:var(--mut);font-size:14px;margin:8px 0 0}</style>
 <script>document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var t=b.getAttribute('data-copy'),o=b.textContent,ok=function(){b.textContent='Скопировано ✓';setTimeout(function(){b.textContent=o},2000)};if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(ok,function(){fb(t);ok()})}else{fb(t);ok()}})});function fb(t){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}a.remove()}</script>
 <!-- /KNOPKA -->
